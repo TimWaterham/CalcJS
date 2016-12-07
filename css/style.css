@@ -2,7 +2,8 @@
 /*adding background for some decoration*/
 
 body{
-	background-image: url(../assets/img/bg.jpg)
+	background: url(../assets/img/bg.jpg) no-repeat center center fixed;
+	background-size: cover;
 }
 
 /*adding background for some decoration*/
@@ -24,12 +25,90 @@ body{
 /*-----------------------------*/
 /*    Screen related things    */
 
+#screen {
+	width: 212px;
+	height: 36px;
+	background-color: rgb(156, 79, 175);
+	color: white;
+	border-top: 4px solid rgb(101, 81, 134);
+	border-right: none;
+	border-left: none;
+	border-bottom: none;
+	border-radius: 5px;
+	position: relative;
+	top: 14px;
+	left: 20px;
+	display: inline-block;
+}
+
+#answer {
+	text-align: center;
+	height: 18px;
+	font-size: 18px;
+	padding: 0;
+	margin: 0;
+}
+
+
+#addCalcHistory {
+	text-align: center;
+	height: 18px;
+	font-size: 18px;
+	padding: 0;
+	margin: 0;
+	color: rgba( 255, 255, 255, 0.4);
+}
+
 /*    Screen related things    */
 /*-----------------------------*/
 /*everything related to buttons*/
 
+button{
+	background-color: rgb( 255, 255, 255);
+	border-radius: 3px;
+	margin-left: : 13.5px;
+	margin-right: 3.5px;
+	margin-bottom: 3.5px;
+	margin-top: 13.5px;
+}
+
+.row button{
+	width: 66px;
+	height: 36px;
+	border-bottom: 4px solid rgb(72, 72, 90);
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	margin: 3.5px;
+}
+
+#execute {
+	background-color: rgb( 198, 206, 158);
+	border-bottom: 4px solid rgb( 137, 146, 94);
+	border-left: none;
+	border-right: none;
+	border-top: none;
+}
+
+#buttons {
+	margin: 10px;
+}
+
 
 /*    Clear button		*/
+
+#Clear {
+	background-color: rgb( 255, 0, 0);
+	color: white;
+	border-bottom: 4px solid rgb( 198, 6, 6);
+	border-right: none;
+	border-left: none;
+	border-top: none;
+	width: 66px;
+	height: 36px;
+	position: relative;
+	left: 13.5px;
+}
 
 /*    Clear button		*/
 
