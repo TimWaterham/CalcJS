@@ -1,40 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Calculator</title>
-	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<title>Javascript Calculator</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-
 <body>
-	<!-- Calculator Start -->
-	<div id="calculator">
-		<div class="top">
-			<span class="clear">C</span>
-				<div class="screen"></div>
-	</div>
-	
-	<div class="keys">
-	<!-- Keys -->
-				<span>7</span>
-				<span>8</span>
-				<span>9</span>
-			<span class="operator">+</span>
-				<span>4</span>
-				<span>5</span>
-				<span>6</span>
-			<span class="operator">-</span>
-				<span>1</span>
-				<span>2</span>
-				<span>3</span>
-			<span class="operator">÷</span>
-				<span>0</span>
-				<span>.</span>
-			<span class="eval">=</span>
-			<span class="operator">x</span>
+	<div id="Calculator">
+		<button id="Clear" onclick="clearVariables()">c</button>
+		<div id="screen">
+			<p id="answer">0</p>
+			<p id="addCalcHistory">0</p>
+		</div>
+		<div id="buttons">
+			<div class="row">
+				<button id="7" onclick="digits('7')">7</button>
+				<button id="8" onclick="digits('8')">8</button>
+				<button id="9" onclick="digits('9')">9</button>
+				<button id="plus" onclick="setOperator('+')">+</button>
+			</div>
+			<div class="row">
+				<button id="4" onclick="digits('4')">4</button>
+				<button id="5" onclick="digits('5')">5</button>
+				<button id="6" onclick="digits('6')">6</button>
+				<button id="minus" onclick="setOperator('-')">-</button>
+			</div>
+			<div class="row">
+				<button id="1" onclick="digits('1')">1</button>
+				<button id="2" onclick="digits('2')">2</button>
+				<button id="3" onclick="digits('3')">3</button>
+				<button id="divide" onclick="setOperator('/')">&divide;</button>
+			</div>
+			<div class="row">
+				<button id="0" onclick="digits('0')">0</button>
+				<button id="dot" onclick="dot()">.</button>
+				<button id="execute" onclick="makeCalculation()">=</button>
+				<button id="multiply" onclick="setOperator('*')">x</button>
+			</div>
 		</div>
 	</div>
-
-	<script src="js/calc.js" type="text/javascript" type="text/javascript"></script>
-
+<script type="text/javascript" src="js/calculator.js"></script>
 </body>
 </html>

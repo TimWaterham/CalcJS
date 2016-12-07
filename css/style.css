@@ -1,0 +1,39 @@
+/*start*/
+/*adding background for some decoration*/
+
+body{
+	background-image: url(../assets/img/bg.jpg)
+}
+
+/*adding background for some decoration*/
+
+/*adding  some colours for the calculator and positioning*/
+
+#Calculator{
+	background-color: rgb(67, 148, 217);
+	margin-left : auto;
+	margin-right: auto;
+	margin-top: 300px;
+	width: 325px;
+	height: 270px;
+	border-radius: 5px;
+	border-bottom: 4px solid rgb(75, 66, 128);
+}
+
+/*adding  some colours for the calculator and positioning*/
+/*-----------------------------*/
+/*    Screen related things    */
+
+/*    Screen related things    */
+/*-----------------------------*/
+/*everything related to buttons*/
+
+
+/*    Clear button		*/
+
+/*    Clear button		*/
+
+
+/*     everything related to buttons   */
+/*-------------------------------------*/
+/*End*/
